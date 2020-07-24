@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D73AD4C-C98A-4E3C-8D1A-48BF465E3B29}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CTRLMusic</RootNamespace>
+    <AssemblyName>CTRLMusic</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\William\Desktop\CTRLMusic 2.0\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>pt-BR</TargetCulture>
+    <ProductName>CTRLMusic</ProductName>
+    <PublisherName>Rezиorwill</PublisherName>
+    <SuiteName>SoLong Software</SuiteName>
+    <ApplicationRevision>17</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B4E692A9BBC1B2720E01DE7D049A038B12A1221C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CTRLMusic_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>6_ICONE_CTRLMusic.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLs\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLs\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\DLLs\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\DLLs\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\DLLs\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acessorios\Acessorios.cs" />
+    <Compile Include="Banco\Banco.cs" />
+    <Compile Include="Acessorios\frmCadastroAcessorios.cs" />
+    <Compile Include="Acessorios\frmCadastroAcessorios.Designer.cs">
+      <DependentUpon>frmCadastroAcessorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmConsultas.Designer.cs">
+      <DependentUpon>frmConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTRLMusicDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CTRLMusicDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\frmAbaVender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\frmAbaVender.Designer.cs">
+      <DependentUpon>frmAbaVender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\frmAbaConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\frmAbaConsultar.Designer.cs">
+      <DependentUpon>frmAbaConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\frmAbaCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\frmAbaCadastrar.Designer.cs">
+      <DependentUpon>frmAbaCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen\frmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen\frmSplashScreen.Designer.cs">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen\HardWorker.cs" />
+    <Compile Include="Usuario\frmConsultaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\frmConsultaUsuario.Designer.cs">
+      <DependentUpon>frmConsultaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionario\frmConsultaFuncionario.cs" />
+    <Compile Include="Funcionario\frmConsultaFuncionario.Designer.cs">
+      <DependentUpon>frmConsultaFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produto\frmProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produto\frmProduto.Designer.cs">
+      <DependentUpon>frmProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venda\frmVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venda\frmVenda.Designer.cs">
+      <DependentUpon>frmVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionario\frmCadastroFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionario\frmCadastroFuncionario.Designer.cs">
+      <DependentUpon>frmCadastroFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instrumento\frmCadastroInstrumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instrumento\frmCadastroInstrumento.Designer.cs">
+      <DependentUpon>frmCadastroInstrumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.cs" />
+    <Compile Include="Midia\frmCadastroMidia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Midia\frmCadastroMidia.Designer.cs">
+      <DependentUpon>frmCadastroMidia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Som\Som.cs" />
+    <Compile Include="Usuario\frmNovoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\frmNovoUsuario.Designer.cs">
+      <DependentUpon>frmNovoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionario\Funcionario.cs" />
+    <Compile Include="Instrumento\Instrumento.cs" />
+    <Compile Include="Midia\Midia.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuario\Usuario.cs" />
+    <Compile Include="Venda\CalculoVenda.cs" />
+    <Compile Include="Venda\Venda.cs" />
+    <EmbeddedResource Include="Acessorios\frmCadastroAcessorios.resx">
+      <DependentUpon>frmCadastroAcessorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmConsultas.resx">
+      <DependentUpon>frmConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmLogin.pt-BR.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\frmAbaCadastrar.pt-BR.resx">
+      <DependentUpon>frmAbaCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\frmAbaCadastrar.pt.resx">
+      <DependentUpon>frmAbaCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\frmAbaVender.pt-BR.resx">
+      <DependentUpon>frmAbaVender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\frmAbaVender.resx">
+      <DependentUpon>frmAbaVender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\frmAbaConsultar.pt-BR.resx">
+      <DependentUpon>frmAbaConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\frmAbaConsultar.resx">
+      <DependentUpon>frmAbaConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\frmAbaCadastrar.resx">
+      <DependentUpon>frmAbaCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen\frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\frmConsultaUsuario.resx">
+      <DependentUpon>frmConsultaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionario\frmConsultaFuncionario.resx">
+      <DependentUpon>frmConsultaFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produto\frmProduto.resx">
+      <DependentUpon>frmProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venda\frmVenda.resx">
+      <DependentUpon>frmVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionario\frmCadastroFuncionario.resx">
+      <DependentUpon>frmCadastroFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instrumento\frmCadastroInstrumento.resx">
+      <DependentUpon>frmCadastroInstrumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Midia\frmCadastroMidia.resx">
+      <DependentUpon>frmCadastroMidia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\frmNovoUsuario.resx">
+      <DependentUpon>frmNovoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="bin\Debug\CTRLMusic_documentação.pdf" />
+    <None Include="CTRLMusicDataSet.xsc">
+      <DependentUpon>CTRLMusicDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CTRLMusicDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CTRLMusicDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CTRLMusicDataSet.xss">
+      <DependentUpon>CTRLMusicDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\1_PRINCIPAL_cadastrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\1_PRINCIPAL_consultar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\1_PRINCIPAL_deslogar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\1_PRINCIPAL_manual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\1_PRINCIPAL_vender.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\2_CADASTRAR_addguitar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\2_CADASTRAR_addmidia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\2_CADASTRAR_addstick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\2_CADASTRAR_addworker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\3_CONSULTAR_searchchart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\3_CONSULTAR_searchguitar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\3_CONSULTAR_searchmidia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\3_CONSULTAR_searchstick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\3_CONSULTAR_searchuser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\3_CONSULTAR_searchworker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\4_VENDER_sellguitar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\4_VENDER_sellmidia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\4_VENDER_sellstick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\5_HEADER_ctrlmusicheader3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\7_PNG_drumstick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\7_PNG_flute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\7_PNG_guitar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\7_PNG_midia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\7_PNG_piano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\7_PNG_pick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\7_PNG_product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\7_PNG_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\7_PNG_worker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icones\6_ICONE_chart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icones\6_ICONE_database.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icones\6_ICONE_drums.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icones\6_ICONE_lock1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icones\6_ICONE_midia.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icones\6_ICONE_pick.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icones\6_ICONE_product.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icones\6_ICONE_user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icones\6_ICONE_worker.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Audio\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Txts\9_TXT_cordas.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="6_ICONE_CTRLMusic.ico" />
+    <Content Include="CTRLMusic.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CTRLMusic_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>CTRLMusic.mdf</DependentUpon>
+    </Content>
+    <None Include="Txts\9_TXT_uf.txt" />
+    <None Include="Txts\9_TXT_tipos.txt" />
+    <None Include="Txts\9_TXT_estados.txt" />
+    <None Include="Txts\9_TXT_conexao.txt" />
+    <Content Include="Txts\9_TXT_generos.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Txts\9_TXT_parâmetros.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Txts\9_TXT_sopro.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Txts\9_TXT_teclas.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Txts\9_TXT_percussão.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

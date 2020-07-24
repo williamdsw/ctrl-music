@@ -1,0 +1,27 @@
+norma dos parâmetros
+
+nome = pnome; 
+marca = pmarca;
+cor = pcor; 
+tipo = ptipo;
+instrumento = pins;
+espessura = pesp;
+distribuidor = pdis;
+tamanho = ptam;
+nota_fiscal = pnf;
+codigo = pcod;
+preco = ppre;
+quantidade = pqtd;
+foto = pfoto;
+ano_lancamento = pano;
+genero = pgen;
+artista = part;
+duracao = pdur;
+idioma = pidi;           
+profundidade = ppro;
+estado = pest;
+altura = palt;
+peso = ppeso;
+cod_instrumento = pcins;
+cod_cliente = pccli;
+nserie = pnser;

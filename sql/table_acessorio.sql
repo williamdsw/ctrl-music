@@ -1,0 +1,19 @@
+﻿CREATE TABLE [dbo].[ACESSORIO] (
+    [COD_ACESSORIO] INT             IDENTITY (1, 1) NOT NULL,
+    [NOME]          VARCHAR (150)   NOT NULL,
+    [DISTRIBUIDOR]  VARCHAR (100)   NOT NULL,
+    [MARCA]         VARCHAR (100)   NOT NULL,
+    [PRECO]         NUMERIC (10, 2) NOT NULL,
+    [QUANTIDADE]    INT             NOT NULL,
+    [COR]           VARCHAR (20)    NULL,
+    [MODELO]        VARCHAR (30)    NOT NULL,
+    [TIPO]          VARCHAR (20)    NOT NULL,
+    [INSTRUMENTO]   VARCHAR (20)    NOT NULL,
+    [ALTURA]        VARCHAR (20)    NULL,
+    [LARGURA]       VARCHAR (20)    NULL,
+    [PROFUNDIDADE]  VARCHAR (20)    NULL,
+    [PESO]          VARCHAR (20)    NULL,
+    [IMGCAM]        VARCHAR (MAX)   NULL,
+    PRIMARY KEY CLUSTERED ([COD_ACESSORIO] ASC)
+);
+

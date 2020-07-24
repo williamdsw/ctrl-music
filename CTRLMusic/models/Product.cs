@@ -1,0 +1,7 @@
+﻿
+namespace CTRLMusic
+{
+    class Product
+    {
+    }
+}

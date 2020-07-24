@@ -1,0 +1,8 @@
+externa:
+K:\\CTRLMusic\\CTRLMusic 2.0\\CTRLMusic\\CTRLMusic.mdf
+
+externa 2:
+G:\\CTRLMusic\\CTRLMusic 2.0\\CTRLMusic\\CTRLMusic.mdf
+
+interna:
+E:\\CTRLMusic\\CTRLMusic 2.0\\CTRLMusic\\CTRLMusic.mdf
