@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace CTRLMusic.models
 {
-    public class Midia : Product
+    public class Media : Product
     {
         // PROPERTIES
 
@@ -15,6 +15,6 @@ namespace CTRLMusic.models
 
         // CONSTRUCTORS
 
-        public Midia(){}
+        public Media(){}
     }
 }

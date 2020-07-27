@@ -120,6 +120,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CTRLMusicDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Modelsa\Accessory.cs" />
+    <Compile Include="Modelsa\Address.cs" />
+    <Compile Include="Modelsa\Employee.cs" />
+    <Compile Include="Modelsa\Instrument.cs" />
+    <Compile Include="Modelsa\Measures.cs" />
+    <Compile Include="Modelsa\Midia.cs" />
+    <Compile Include="Modelsa\Product.cs" />
+    <Compile Include="Modelsa\Provider.cs" />
+    <Compile Include="Modelsa\User.cs" />
     <Compile Include="Principal\frmAbaVender.cs">
       <SubType>Form</SubType>
     </Compile>
