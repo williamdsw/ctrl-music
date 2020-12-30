@@ -120,15 +120,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CTRLMusicDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Modelsa\Accessory.cs" />
-    <Compile Include="Modelsa\Address.cs" />
-    <Compile Include="Modelsa\Employee.cs" />
-    <Compile Include="Modelsa\Instrument.cs" />
-    <Compile Include="Modelsa\Measures.cs" />
-    <Compile Include="Modelsa\Midia.cs" />
-    <Compile Include="Modelsa\Product.cs" />
-    <Compile Include="Modelsa\Provider.cs" />
-    <Compile Include="Modelsa\User.cs" />
+    <Compile Include="dao\IUserDao.cs" />
+    <Compile Include="dao\IProviderDao.cs" />
+    <Compile Include="dao\IMeasuresDao.cs" />
+    <Compile Include="dao\IAddressDao.cs" />
+    <Compile Include="dao\IEmployeeDao.cs" />
+    <Compile Include="dao\IInstrumentDao.cs" />
+    <Compile Include="dao\IMediaDao.cs" />
+    <Compile Include="models\Accessory.cs" />
+    <Compile Include="models\Address.cs" />
+    <Compile Include="models\Employee.cs" />
+    <Compile Include="models\Instrument.cs" />
+    <Compile Include="models\Measures.cs" />
+    <Compile Include="models\Media.cs" />
+    <Compile Include="models\Product.cs" />
+    <Compile Include="models\Provider.cs" />
+    <Compile Include="models\User.cs" />
     <Compile Include="Principal\frmAbaVender.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +159,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="dao\IAccessoryDao.cs" />
     <Compile Include="SplashScreen\frmSplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
