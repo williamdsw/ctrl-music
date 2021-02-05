@@ -1,13 +1,16 @@
 ﻿
-public class Instrument : Product
+namespace Model
 {
-    public string Type { get; set; }
-    public Measures Measures { get; set; }
-
-    public Instrument() { }
-    public Instrument(string type, Measures measures) 
+    public class Instrument : Product
     {
-        Type = type;
-        Measures = measures;
+        public string Type { get; set; }
+        public Measures Measures { get; set; }
+
+        public Instrument() { }
+        public Instrument(string type, Measures measures) 
+        {
+            Type = type;
+            Measures = measures;
+        }
     }
 }

@@ -1,31 +1,34 @@
 ﻿
 using System;
 
-public class Address
+namespace Model
 {
-    public int Id { get; set; }
-    public string Street { get; set; }
-    public string Number { get; set; }
-    public string Complement { get; set; }
-    public string ZipCode { get; set; }
-    public string City { get; set; }
-    public string State { get; set; }
-    public string Country { get; set; }
-    public DateTime CreatedAt { get; set; }
-    public DateTime UpdatedAt { get; set; }
-
-    public Address() {}
-    public Address(int id, string street, string number, string complement, string zipCode, string city, string state, string country, DateTime createdAt, DateTime updatedAt)
+    public class Address
     {
-        Id = id;
-        Street = street;
-        Number = number;
-        Complement = complement;
-        ZipCode = zipCode;
-        City = city;
-        State = state;
-        Country = country;
-        CreatedAt = createdAt;
-        UpdatedAt = updatedAt;
+        public int Id { get; set; }
+        public string Street { get; set; }
+        public string Number { get; set; }
+        public string Complement { get; set; }
+        public string ZipCode { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Country { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
+
+        public Address() {}
+        public Address(int id, string street, string number, string complement, string zipCode, string city, string state, string country, DateTime createdAt, DateTime updatedAt)
+        {
+            Id = id;
+            Street = street;
+            Number = number;
+            Complement = complement;
+            ZipCode = zipCode;
+            City = city;
+            State = state;
+            Country = country;
+            CreatedAt = createdAt;
+            UpdatedAt = updatedAt;
+        }
     }
 }
