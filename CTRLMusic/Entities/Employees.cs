@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace Model
+namespace Entities
 {
     public class Employee
     {
@@ -15,7 +15,7 @@ namespace Model
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
 
-        public Employee() {}
+        public Employee() { }
         public Employee(int id, string name, string identification, string phoneNumber, string email, string role, DateTime birthDate, DateTime createdAt, DateTime updatedAt)
         {
             Id = id;

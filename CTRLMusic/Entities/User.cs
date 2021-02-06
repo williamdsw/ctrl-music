@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace Model
+namespace Entities
 {
     public class User
     {

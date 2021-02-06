@@ -1,5 +1,5 @@
 ﻿
-namespace Model
+namespace Entities
 {
     public class Instrument : Product
     {
@@ -7,7 +7,7 @@ namespace Model
         public Measures Measures { get; set; }
 
         public Instrument() { }
-        public Instrument(string type, Measures measures) 
+        public Instrument(string type, Measures measures)
         {
             Type = type;
             Measures = measures;

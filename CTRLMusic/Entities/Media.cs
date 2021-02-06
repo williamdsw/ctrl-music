@@ -1,5 +1,5 @@
 ﻿
-namespace Model
+namespace Entities
 {
     public class Media : Product
     {
@@ -9,7 +9,7 @@ namespace Model
         public string Languages { get; set; }
         public Measures Measures { get; set; }
 
-        public Media(){}
+        public Media() { }
         public Media(string genres, string artist, string duration, string languages, Measures measures)
         {
             Genres = genres;

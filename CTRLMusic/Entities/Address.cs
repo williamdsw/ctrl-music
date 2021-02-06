@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace Model
+namespace Entities
 {
     public class Address
     {
@@ -16,7 +16,7 @@ namespace Model
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
 
-        public Address() {}
+        public Address() { }
         public Address(int id, string street, string number, string complement, string zipCode, string city, string state, string country, DateTime createdAt, DateTime updatedAt)
         {
             Id = id;
