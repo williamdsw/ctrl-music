@@ -1,5 +1,5 @@
 ﻿
-namespace Model
+namespace Entities
 {
     public class Accessory : Product
     {

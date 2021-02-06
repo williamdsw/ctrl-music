@@ -127,15 +127,15 @@
     <Compile Include="dao\IEmployeeDao.cs" />
     <Compile Include="dao\IInstrumentDao.cs" />
     <Compile Include="dao\IMediaDao.cs" />
-    <Compile Include="models\Accessory.cs" />
-    <Compile Include="models\Address.cs" />
-    <Compile Include="models\Employee.cs" />
-    <Compile Include="models\Instrument.cs" />
-    <Compile Include="models\Measures.cs" />
-    <Compile Include="models\Media.cs" />
-    <Compile Include="models\Product.cs" />
-    <Compile Include="models\Provider.cs" />
-    <Compile Include="models\User.cs" />
+    <Compile Include="Entities\Instrument.cs" />
+    <Compile Include="Entities\Employees.cs" />
+    <Compile Include="Entities\Address.cs" />
+    <Compile Include="Entities\Measures.cs" />
+    <Compile Include="Entities\Media.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\Provider.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\Acessory.cs" />
     <Compile Include="Principal\frmAbaVender.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +160,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="dao\IAccessoryDao.cs" />
+    <Compile Include="Repositories\IAcessoryRepository - Copy %282%29.cs" />
+    <Compile Include="Repositories\IAcessoryRepository - Copy %283%29.cs" />
+    <Compile Include="Repositories\IAcessoryRepository - Copy %284%29.cs" />
+    <Compile Include="Repositories\IAcessoryRepository - Copy %285%29.cs" />
+    <Compile Include="Repositories\IAcessoryRepository - Copy %286%29.cs" />
+    <Compile Include="Repositories\IAcessoryRepository - Copy %287%29.cs" />
+    <Compile Include="Repositories\IAcessoryRepository - Copy.cs" />
+    <Compile Include="Repositories\IAcessoryRepository.cs" />
     <Compile Include="SplashScreen\frmSplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
