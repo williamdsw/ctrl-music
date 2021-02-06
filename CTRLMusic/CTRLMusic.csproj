@@ -109,6 +109,7 @@
     <Compile Include="Acessorios\frmCadastroAcessorios.Designer.cs">
       <DependentUpon>frmCadastroAcessorios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Configuration\Queries.cs" />
     <Compile Include="Consultas\frmConsultas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,13 +121,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CTRLMusicDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="dao\IUserDao.cs" />
-    <Compile Include="dao\IProviderDao.cs" />
-    <Compile Include="dao\IMeasuresDao.cs" />
-    <Compile Include="dao\IAddressDao.cs" />
-    <Compile Include="dao\IEmployeeDao.cs" />
-    <Compile Include="dao\IInstrumentDao.cs" />
-    <Compile Include="dao\IMediaDao.cs" />
     <Compile Include="Entities\Instrument.cs" />
     <Compile Include="Entities\Employees.cs" />
     <Compile Include="Entities\Address.cs" />
@@ -135,7 +129,7 @@
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\Provider.cs" />
     <Compile Include="Entities\Product.cs" />
-    <Compile Include="Entities\Acessory.cs" />
+    <Compile Include="Entities\Accessory.cs" />
     <Compile Include="Principal\frmAbaVender.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,15 +153,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="dao\IAccessoryDao.cs" />
-    <Compile Include="Repositories\IAcessoryRepository - Copy %282%29.cs" />
-    <Compile Include="Repositories\IAcessoryRepository - Copy %283%29.cs" />
-    <Compile Include="Repositories\IAcessoryRepository - Copy %284%29.cs" />
-    <Compile Include="Repositories\IAcessoryRepository - Copy %285%29.cs" />
-    <Compile Include="Repositories\IAcessoryRepository - Copy %286%29.cs" />
-    <Compile Include="Repositories\IAcessoryRepository - Copy %287%29.cs" />
-    <Compile Include="Repositories\IAcessoryRepository - Copy.cs" />
-    <Compile Include="Repositories\IAcessoryRepository.cs" />
+    <Compile Include="Repositories\IEmployeeRepository.cs" />
+    <Compile Include="Repositories\IInstrumentRepository.cs" />
+    <Compile Include="Repositories\IMeasuresRepository.cs" />
+    <Compile Include="Repositories\IMediaRepository.cs" />
+    <Compile Include="Repositories\IProviderRepository.cs" />
+    <Compile Include="Repositories\IUserRepository.cs" />
+    <Compile Include="Repositories\IAddressRepository.cs" />
+    <Compile Include="Repositories\IAccessoryRepository.cs" />
     <Compile Include="SplashScreen\frmSplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -466,6 +459,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Audio\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Txts\9_TXT_cordas.txt" />
