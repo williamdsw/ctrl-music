@@ -37,6 +37,28 @@ namespace Configuration
                 }
             }
 
+            public static string GetById
+            {
+                get
+                {
+                    return @" SELECT acc.id AS accessory_id, acc.instrument_type, pro.*, mea.*
+                              FROM accessory AS acc
+                              INNER JOIN product AS pro ON (acc.product_id = pro.id)
+                              LEFT JOIN measures AS mea ON (acc.measures_id = mea.id)
+                              WHERE acc.id = @accessory_id ";
+                }
+            }
+
+            public static string DeleteOne
+            {
+                get
+                {
+                    return @" DELETE FROM accessory 
+                              WHERE accessory_id = @accessory_id
+                              AND product_id = @product_id ";
+                }
+            }
+
 
         }
     }

@@ -83,6 +83,9 @@
     <Reference Include="MetroFramework.Fonts">
       <HintPath>..\..\DLLs\MetroFramework.Fonts.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>..\Plugins\Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Security">
       <HintPath>..\..\DLLs\Mono.Security.dll</HintPath>
     </Reference>
@@ -130,6 +133,7 @@
     <Compile Include="Entities\Provider.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Accessory.cs" />
+    <Compile Include="Services\DatabaseService.cs" />
     <Compile Include="Principal\frmAbaVender.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +165,14 @@
     <Compile Include="Repositories\IUserRepository.cs" />
     <Compile Include="Repositories\IAddressRepository.cs" />
     <Compile Include="Repositories\IAccessoryRepository.cs" />
+    <Compile Include="Services\AddressService.cs" />
+    <Compile Include="Services\EmployeeService.cs" />
+    <Compile Include="Services\InstrumentService.cs" />
+    <Compile Include="Services\MeasuresService.cs" />
+    <Compile Include="Services\MediaService.cs" />
+    <Compile Include="Services\ProviderService.cs" />
+    <Compile Include="Services\UserService.cs" />
+    <Compile Include="Services\AccessoryService.cs" />
     <Compile Include="SplashScreen\frmSplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -459,7 +471,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Audio\" />
-    <Folder Include="Services\" />
+    <Folder Include="Others\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Txts\9_TXT_cordas.txt" />

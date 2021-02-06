@@ -11,6 +11,7 @@ namespace Entities
         public string Role { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
+        public Employee Employee { get; set; }
 
         public User() { }
         public User(int id, string name, string password, string role, DateTime createdAt, DateTime updatedAt)

@@ -8,7 +8,7 @@ namespace Repositories
     { 
         bool Insert(Accessory accessory);
         bool Update(Accessory accessory);
-        bool Delete(List<Accessory> accessories);
+        bool Delete(Accessory accessory);
 
         List<Accessory> SearchAll();
         List<Accessory> SearchByNameOrBrandOrDescription(string name, string brand, string description);
